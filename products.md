@@ -4,7 +4,7 @@ title: Product
 permalink: /product/
 ---
 
-<!-- ======= Portfolio Section ======= -->
+<!--
 <section id="portfolio" class="portfolio">
     <div class="container">
 
@@ -166,4 +166,4 @@ permalink: /product/
         </div>
 
     </div>
-</section><!-- End Portfolio Section -->
+</section>-->
