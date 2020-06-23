@@ -1647,6 +1647,20 @@ section {
 .product-card .icon-box .card {
   height: 100%;
 }
+#header .logo.custom-logo,
+#footer .logo.custom-logo{
+  font-size: 12px;
+}
+#footer .logo img {
+    max-height: 40px;
+}
+.section-header{
+  color: #5c9f24;
+}
+.table-hover tbody tr:hover{
+  background-color: #5c9f24;
+  color: #ffffff;
+}
 @media (max-width: 768px) {
   .small-media {
     display: block;
