@@ -97,7 +97,7 @@
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
             </form> -->
-            <form id="contactform" class="needs-validation" method="POST" novalidate>
+            <form id="contactform" class="needs-validation" method="POST" novalidate action="//formspree.io/info@toppolymersbd.com">
                 <div class="form-row">
                     <div class="col-md-6 form-group">
                         <input type="text" name="name" class="form-control" placeholder="Your Name" maxlength="120"
@@ -134,8 +134,8 @@
                 <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
             <script>
-                var contactform = document.getElementById('contactform');
-                contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'toppolymersbd' + '.' + 'com');
+                //var contactform = document.getElementById('contactform');
+                //contactform.setAttribute('action', '//formspree.io/' + 'info' + '@' + 'toppolymersbd' + '.' + 'com');
                 // contact-us
                 window.addEventListener('load', function () {
                     // Fetch all the forms we want to apply custom Bootstrap validation styles to
