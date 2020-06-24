@@ -53,8 +53,8 @@
 
         </div>
 
-        <div class="form">
-            <form action="../forms/contact.php" method="post" role="form" class="php-email-form">
+        <div class="form php-email-form">
+            <!-- <form action="../forms/contact.php" method="post" role="form" class="php-email-form">
                 <div class="form-row">
                     <div class="col-md-6 form-group">
                         <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
@@ -96,7 +96,62 @@
                     <div class="sent-message">Your message has been sent. Thank you!</div>
                 </div>
                 <div class="text-center"><button type="submit">Send Message</button></div>
+            </form> -->
+            <form id="contactform" class="needs-validation" method="POST" novalidate>
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" name="name" class="form-control" placeholder="Your Name" maxlength="120"
+                            minlength="4" required>
+                        <div class="invalid-feedback">Please enter at least 4 chars</div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        <div class="invalid-feedback">Please enter a valid email</div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="col-md-6 form-group">
+                        <input type="text" name="company" class="form-control" placeholder="Company Name"
+                            maxlength="120" minlength="4" required>
+                        <div class="invalid-feedback">Please enter company name</div>
+                    </div>
+                    <div class="col-md-6 form-group">
+                        <input type="number" class="form-control" name="telephone" placeholder="Your Telephone Nember"
+                            maxlength="30" required>
+                        <div class="invalid-feedback">Please enter a valid telephone number</div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" name="subject" placeholder="Subject" required />
+                    <div class="invalid-feedback">Please enter your subject</div>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                    <div class="invalid-feedback">Please write something for us</div>
+                </div>
+                <input type="hidden" name="_subject" value="Website contact" />
+                <input type="text" name="_gotcha" style="display:none" />
+                <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+            <script>
+                var contactform = document.getElementById('contactform');
+                contactform.setAttribute('action', '//formspree.io/' + 'frsummit1' + '@' + 'gmail' + '.' + 'com');
+                // contact-us
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            </script>
         </div>
 
     </div>
