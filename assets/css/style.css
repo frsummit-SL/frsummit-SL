@@ -1661,6 +1661,9 @@ section {
   background-color: #5c9f24;
   color: #ffffff;
 }
+#product .portfolio-wrap .portfolio-info{
+  opacity: 1;
+}
 @media (max-width: 768px) {
   .small-media {
     display: block;
