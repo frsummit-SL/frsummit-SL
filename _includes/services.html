@@ -8,41 +8,31 @@
 
         <div class="row">
             <div class="col-lg-6 col-md-6 icon-box">
-                <div class="icon"><i class="icofont-earth"></i></div>
+                <div class="icon"><i class="icofont-ship-alt"></i></div>
                 <h4 class="title"><a href="">Clearing & Forwarding Agent</a></h4>
                 <p class="description">Our C & F company name is ‘Top Trade’. We take care of your goods. We are well
                     experienced in Customs, Port and
                     transport activities.</p>
             </div>
             <div class="col-lg-6 col-md-6 icon-box">
-                <div class="icon"><i class="icofont-handshake-deal"></i></div>
+                <div class="icon"><i class="icofont-user-suited"></i></div>
+                <!-- <div class="icon"><i class="icofont-handshake-deal"></i></div> -->
                 <h4 class="title"><a href="">Consultancy</a></h4>
                 <p class="description">We serve for Bond License, Import, Export and industrial activities.</p>
             </div>
             <div class="col-lg-6 col-md-6 icon-box">
-                <div class="icon"><i class="icofont-indent"></i></div>
+                <div class="icon"><i class="far fa-handshake"></i></div>
                 <h4 class="title"><a href="">Indenting</a></h4>
                 <p class="description">We sell Polymer, PVC Chemicals, Ceramic Raw Materials, Glass Raw Materials, Film,
                     Oleo Chemicals, Pulp & Paper, Solvent,
                     Synthetic Rubber etc.</p>
             </div>
             <div class="col-lg-6 col-md-6 icon-box">
-                <div class="icon"><i class="icofont-chart-bar-graph"></i></div>
+                <!-- <div class="icon"><i class="icofont-chart-bar-graph"></i></div> -->
+                <div class="icon"><i class="icofont-earth"></i></div>
                 <h4 class="title"><a href="">Trading</a></h4>
                 <p class="description">We buy and sell globally.</p>
             </div>
-            <!-- <div class="col-lg-4 col-md-6 icon-box">
-                <div class="icon"><i class="icofont-settings"></i></div>
-                <h4 class="title"><a href="">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                    praesentium voluptatum deleniti atque</p>
-            </div>
-            <div class="col-lg-4 col-md-6 icon-box">
-                <div class="icon"><i class="icofont-tasks-alt"></i></div>
-                <h4 class="title"><a href="">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                    soluta nobis est eligendi</p>
-            </div> -->
         </div>
 
     </div>
@@ -61,7 +51,6 @@
 
             <div class="col-lg-4">
                 <div class="box">
-                    <span>01</span>
                     <h4>Service Commitment</h4>
                     <p>We are committed of providing first class service to our customers. We can understand your
                         requirements easily. We care
@@ -71,7 +60,6 @@
 
             <div class="col-lg-4 mt-4 mt-lg-0">
                 <div class="box">
-                    <span>02</span>
                     <h4>Value</h4>
                     <p>Every customer is valuable to us. We offer wide range of quality products at competitive price.
                         Check us out.</p>
@@ -80,18 +68,20 @@
 
             <div class="col-lg-4 mt-4 mt-lg-0">
                 <div class="box">
-                    <span>03</span>
                     <h4>Our Experience</h4>
                     <p>Our mother company ‘Top Rank’ established in 1987. We have long experience in handling/selling
                         products of our overseas
                         principals in Bangladesh as a reputed agent. We are well known in indenting sector of Bangladesh
-                        Market since last 29
-                        years.</p>
+                        Market since last <span id="yrPassed"></span> years.</p>
+                        <script>
+                            var yrStart = 1987;
+                            var yrEnd = Date().split(" ")[3];
+                            document.getElementById("yrPassed").innerHTML = yrEnd - yrStart;
+                        </script>
                 </div>
             </div>
             <div class="col-lg-4 mt-4">
                 <div class="box">
-                    <span>04</span>
                     <h4>Nice ‘N’ Easy</h4>
                     <p>We try to make things easy. Our required clauses in the L/Cs are acceptable to all. We don’t ask
                         any complicated clause
@@ -101,7 +91,6 @@
             </div>
             <div class="col-lg-4 mt-4">
                 <div class="box">
-                    <span>05</span>
                     <h4>Claims Service</h4>
                     <p>We’re here to resolve your claims/asking (if any) through a speedy conclusion. We liaison with
                         supplier & customer to
@@ -110,7 +99,6 @@
             </div>
             <div class="col-lg-4 mt-4">
                 <div class="box">
-                    <span>06</span>
                     <h4>Testimonials</h4>
                     <p>We got majority of our customers through recommendation. Our excellent service and competitive
                         prices keeps them coming

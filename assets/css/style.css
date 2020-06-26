@@ -1664,6 +1664,13 @@ section {
 #product .portfolio-wrap .portfolio-info{
   opacity: 1;
 }
+#yrPassed {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  display: contents;
+}
 @media (max-width: 768px) {
   .small-media {
     display: block;
