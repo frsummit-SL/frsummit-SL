@@ -663,9 +663,10 @@ section {
 .clients {
   padding: 15px 0;
   text-align: center;
+  background-color: #f1f1f1;
 }
 
-.clients img {
+/* .clients img {
   max-width: 45%;
   transition: all 0.4s ease-in-out;
   display: inline-block;
@@ -684,6 +685,57 @@ section {
   .clients img {
     max-width: 40%;
   }
+} */
+
+/*-----------------*/
+
+
+.clients .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.clients .owl-item img {
+  width: 70%;
+  opacity: 0.5;
+  transition: 0.3s;
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
+}
+.clients .owl-item .img-size{ width: 45%;}
+
+.clients .owl-item img:hover {
+  -webkit-filter: none;
+  filter: none;
+  opacity: 1;
+}
+
+.clients .owl-nav, .clients .owl-dots {
+  margin-top: 5px;
+  text-align: center;
+}
+
+.clients .owl-dot {
+  display: inline-block;
+  margin: 0 5px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #ddd !important;
+}
+
+.clients .owl-dot.active {
+  background-color: #5c9f24 !important;
+}
+.clients .owl-dot:focus {
+  outline: none;
+}
+
+.clients .owl-carousel .owl-stage {
+  display: flex;
+  align-items: center;
 }
 
 /*--------------------------------------------------------------
@@ -1599,7 +1651,21 @@ section {
   color: #fff;
 }
 /*-------------Custom------------------*/
-.buyer-supplier ul {
+#product .portfolio-wrap .portfolio-info{
+  opacity: 1;
+  background-color: rgba(42, 42, 42, 0.7);
+}
+#product .portfolio-wrap:hover .portfolio-info {
+    opacity: 0;
+    background: none !important;
+}
+#product .portfolio-wrap {
+    background: none !important;
+}
+.buyer-supplier .portfolio-wrap {
+    max-height: 285px;
+}
+/* .buyer-supplier ul {
     padding: 0;
     margin: 0 auto 20px auto;
     list-style: none;
@@ -1620,6 +1686,10 @@ section {
 .buyer-supplier ul li a:hover, .buyer-supplier ul li a.active {
     color: #fff;
     background: #5c9f24;
+} */
+.contact-detail strong{
+  font-family: "Roboto", sans-serif;
+  color: #999;
 }
 .why-us .box {
   height: 100%;
@@ -1652,7 +1722,7 @@ section {
   font-size: 12px;
 }
 #footer .logo img {
-    max-height: 54px;
+    max-height: 40px;
 }
 .section-header{
   color: #5c9f24;
@@ -1661,18 +1731,105 @@ section {
   background-color: #5c9f24;
   color: #ffffff;
 }
-#product .portfolio-wrap .portfolio-info{
-  opacity: 1;
-}
-#yrPassed {
-  font-size: 15px;
-  margin: 0;
-  padding: 0;
-  font-weight: normal;
-  display: contents;
-}
 @media (max-width: 768px) {
   .small-media {
     display: block;
   }
+}
+/*-----------------------*/
+
+/* 
+Max width before this PARTICULAR table gets nasty
+This query will take effect for any screen smaller than 760px
+and also iPads specifically.
+*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+  }
+  tr:nth-of-type(odd) { 
+  background: #eee; 
+}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+.product-section tr { border: 1px solid #ccc; }
+	
+.product-section tr td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+.product-section	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*.....Label polypropylene data............*/
+#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
+#polypropylene	td:nth-of-type(2):before { content: " "; }
+#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
+#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+  /*.....Label LDPE data............*/
+#ldpe	td:nth-of-type(1):before { content: "Low Density Polyethylene (LDPE)"; }
+#ldpe	td:nth-of-type(2):before { content: "MFI"; }
+#ldpe	td:nth-of-type(3):before { content: ""; }
+#ldpe	td:nth-of-type(4):before { content: "Applications"; }
+#ldpe	td:nth-of-type(5):before { content: "Country of Origin"; }
+  /*.....Label LDPE data............*/
+#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
+#polypropylene	td:nth-of-type(2):before { content: " "; }
+#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
+#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+  /*.....Label LDPE data............*/
+#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
+#polypropylene	td:nth-of-type(2):before { content: " "; }
+#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
+#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+  /*.....Label LDPE data............*/
+#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
+#polypropylene	td:nth-of-type(2):before { content: " "; }
+#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
+#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+  /*.....Label LDPE data............*/
+#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
+#polypropylene	td:nth-of-type(2):before { content: " "; }
+#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
+#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+  /*.....Label LDPE data............*/
+#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
+#polypropylene	td:nth-of-type(2):before { content: " "; }
+#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
+#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+  /*.....Label LDPE data............*/
+#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
+#polypropylene	td:nth-of-type(2):before { content: " "; }
+#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
+#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+
 }
