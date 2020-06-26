@@ -1833,3 +1833,10 @@ only screen and (max-width: 760px),
 #polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
 
 }
+#yrPassed {
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  display: contents;
+}
