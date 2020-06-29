@@ -562,6 +562,7 @@ section {
 
 .about .content p {
   margin-bottom: 0;
+  text-align: justify;
 }
 
 .about .content .icon-box {
@@ -639,7 +640,8 @@ section {
   padding: 15px 0 0 0;
   margin: 0 0 0 60px;
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  /* font-size: 14px; */
+  font-size: 12px;
   color: #505050;
 }
 
@@ -1656,7 +1658,7 @@ section {
   background-color: rgba(42, 42, 42, 0.7);
 }
 #product .portfolio-wrap:hover .portfolio-info {
-    opacity: 0;
+    opacity: 0.5;
     background: none !important;
 }
 #product .portfolio-wrap {
