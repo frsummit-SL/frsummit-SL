@@ -1739,7 +1739,13 @@ section {
   }
 }
 /*-----------------------*/
-
+@media 
+only screen and (min-width: 1024px)  {
+  table, thead, tbody, th, td, tr { 
+		width: 33.33%; 
+  }
+  .desc{width: 66.66%;}
+}
 /* 
 Max width before this PARTICULAR table gets nasty
 This query will take effect for any screen smaller than 760px
@@ -1771,7 +1777,7 @@ only screen and (max-width: 760px),
 		border: none;
 		border-bottom: 1px solid #eee; 
 		position: relative;
-		padding-left: 50%; 
+    padding-left: 50%;
 	}
 	
 .product-section	td:before { 
@@ -1782,57 +1788,114 @@ only screen and (max-width: 760px),
 		left: 6px;
 		width: 45%; 
 		padding-right: 10px; 
-		white-space: nowrap;
+    white-space: normal;
+    display: table;
 	}
 	
 	/*.....Label polypropylene data............*/
 #polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
-#polypropylene	td:nth-of-type(2):before { content: " "; }
-#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
-#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
-#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+#polypropylene	td:nth-of-type(2):before { content: "Applications"; }
+#polypropylene	td:nth-of-type(3):before { content: "Country of Origin"; }
   /*.....Label LDPE data............*/
 #ldpe	td:nth-of-type(1):before { content: "Low Density Polyethylene (LDPE)"; }
-#ldpe	td:nth-of-type(2):before { content: "MFI"; }
-#ldpe	td:nth-of-type(3):before { content: ""; }
-#ldpe	td:nth-of-type(4):before { content: "Applications"; }
-#ldpe	td:nth-of-type(5):before { content: "Country of Origin"; }
-  /*.....Label LDPE data............*/
-#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
-#polypropylene	td:nth-of-type(2):before { content: " "; }
-#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
-#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
-#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
-  /*.....Label LDPE data............*/
-#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
-#polypropylene	td:nth-of-type(2):before { content: " "; }
-#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
-#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
-#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
-  /*.....Label LDPE data............*/
-#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
-#polypropylene	td:nth-of-type(2):before { content: " "; }
-#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
-#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
-#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
-  /*.....Label LDPE data............*/
-#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
-#polypropylene	td:nth-of-type(2):before { content: " "; }
-#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
-#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
-#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
-  /*.....Label LDPE data............*/
-#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
-#polypropylene	td:nth-of-type(2):before { content: " "; }
-#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
-#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
-#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
-  /*.....Label LDPE data............*/
-#polypropylene	td:nth-of-type(1):before { content: "Polypropylene (PP)"; }
-#polypropylene	td:nth-of-type(2):before { content: " "; }
-#polypropylene	td:nth-of-type(3):before { content: "MFI"; }
-#polypropylene	td:nth-of-type(4):before { content: "Applications"; }
-#polypropylene	td:nth-of-type(5):before { content: "Country of Origin"; }
+#ldpe	td:nth-of-type(2):before { content: "Applications"; }
+#ldpe	td:nth-of-type(3):before { content: "Country of Origin"; }
+  /*.....Label LLDPE data............*/
+#lldpe	td:nth-of-type(1):before { content: "Linear Low Density Polyethylene (LLDPE)"; }
+#lldpe	td:nth-of-type(2):before { content: "Applications"; }
+#lldpe	td:nth-of-type(3):before { content: "Country of Origin"; }
+  /*.....Label HDPE data............*/
+#hdpe	td:nth-of-type(1):before { content: "High Density Polyethylene (HDPE)"; }
+#hdpe	td:nth-of-type(2):before { content: "Applications"; }
+#hdpe	td:nth-of-type(3):before { content: "Country of Origin"; }
+  /*.....Label Polystyrene (PS – GPPS & HIPS) data............*/
+#polystyrene	td:nth-of-type(1):before { content: "Polystyrene (PS – GPPS & HIPS)"; }
+#polystyrene	td:nth-of-type(2):before { content: "Applications"; }
+#polystyrene	td:nth-of-type(3):before { content: "Country of Origin"; }
+  /*.....Label Poly Vinyl Chloride (PVC) data............*/
+#pvc	td:nth-of-type(1):before { content: "Poly Vinyl Chloride (PVC)"; }
+#pvc	td:nth-of-type(2):before { content: "Applications"; }
+  /*.....Label Ethylene Vinyl Acetate (EVA) data............*/
+#eva	td:nth-of-type(1):before { content: "Ethylene Vinyl Acetate (EVA)"; }
+#eva	td:nth-of-type(2):before { content: "Applications"; }
+#eva	td:nth-of-type(3):before { content: "Country of Origin"; }
+  /*.....Label Acrylonitrile Butadiene Styrene (ABS) data............*/
+#abs	td:nth-of-type(1):before { content: "Acrylonitrile Butadiene Styrene (ABS)"; }
+#abs	td:nth-of-type(2):before { content: "Description"; }
+#abs	td:nth-of-type(3):before { content: "Country of Origin"; }
+  /*.....Label Styrene Acrylonitrile (SAN) data............*/
+#styrene-acrylonitrile	td:nth-of-type(1):before { content: "Styrene Acrylonitrile (SAN)"; }
+#styrene-acrylonitrile	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label Engineering Plastics data............*/
+#engineering-plastics	td:nth-of-type(1):before { content: "Engineering Plastics"; }
+#engineering-plastics	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label PET Resin data............*/
+#pet-resin	td:nth-of-type(1):before { content: "PET Resin"; }
+#pet-resin	td:nth-of-type(2):before { content: "Country of Origin"; }
+
+/* PVC Chemicals Section  */
+  /*.....Label Calcium Carbonate – (Coated & Un-Coated) data............*/
+#calcium-carbonate	td:nth-of-type(1):before { content: "Calcium Carbonate – (Coated & Un-Coated)"; }
+#calcium-carbonate	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label DBLS data............*/
+#dbls	td:nth-of-type(1):before { content: "DBLS"; }
+#dbls	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label Paraffin Wax data............*/
+#paraffin-wax	td:nth-of-type(1):before { content: "Paraffin Wax"; }
+#paraffin-wax	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label Polyethlene Wax data............*/
+#polyethlene-wax	td:nth-of-type(1):before { content: "Polyethlene Wax"; }
+#polyethlene-wax	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label PVC Stabilizer data............*/
+#pvc-stabilizer	td:nth-of-type(1):before { content: "PVC Stabilizer"; }
+#pvc-stabilizer	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label TBLS data............*/
+#tbls	td:nth-of-type(1):before { content: "TBLS"; }
+#tbls	td:nth-of-type(2):before { content: "Description"; }
+  /*.....Label TI02 (Titanium Dioxide) data............*/
+#ti02	td:nth-of-type(1):before { content: "TI02 (Titanium Dioxide)"; }
+#ti02	td:nth-of-type(2):before { content: "Description"; }
+
+/* Ceramic Raw Materials  */
+/*.....Label Alumina Ball And Lining data............*/
+#alumina-ball-lining	td:nth-of-type(1):before { content: "Alumina Ball And Lining"; }
+#alumina-ball-lining	td:nth-of-type(2):before { content: "Description"; }
+
+#alumina-oxide	td:nth-of-type(1):before { content: "Alumina Oxide"; }
+#alumina-oxide	td:nth-of-type(2):before { content: "Description"; }
+
+#ball-clay	td:nth-of-type(1):before { content: "Ball Clay"; }
+#ball-clay	td:nth-of-type(2):before { content: "Description"; }
+
+#barium-oxide	td:nth-of-type(1):before { content: "Barium Oxide"; }
+#barium-oxide	td:nth-of-type(2):before { content: "Description"; }
+
+#ceramic-roll	td:nth-of-type(1):before { content: "Ceramic Roll"; }
+#ceramic-roll	td:nth-of-type(2):before { content: "Description"; }
+
+#dolomite	td:nth-of-type(1):before { content: "Dolomite"; }
+#dolomite	td:nth-of-type(2):before { content: "Description"; }
+
+#kaolin	td:nth-of-type(1):before { content: "Kaolin"; }
+#kaolin	td:nth-of-type(2):before { content: "Description"; }
+
+#litharge-yellow-lead	td:nth-of-type(1):before { content: "Litharge Yellow Lead"; }
+#litharge-yellow-lead	td:nth-of-type(2):before { content: "Description"; }
+
+#orange-lead	td:nth-of-type(1):before { content: "Orange Lead"; }
+#orange-lead	td:nth-of-type(2):before { content: "Description"; }
+
+#potash-feldspar	td:nth-of-type(1):before { content: "Potash Feldspar"; }
+#potash-feldspar	td:nth-of-type(2):before { content: "Description"; }
+
+#silica-powder	td:nth-of-type(1):before { content: "Silica Powder"; }
+#silica-powder	td:nth-of-type(2):before { content: "Description"; }
+
+#sodium-feldspar	td:nth-of-type(1):before { content: "Sodium Feldspar"; }
+#sodium-feldspar	td:nth-of-type(2):before { content: "Description"; }
+
+#talcum	td:nth-of-type(1):before { content: "Talcum"; }
+#talcum	td:nth-of-type(2):before { content: "Description"; }
 
 }
 #yrPassed {
