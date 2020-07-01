@@ -1722,6 +1722,7 @@ section {
 #header .logo.custom-logo,
 #footer .logo.custom-logo{
   font-size: 12px;
+  margin-left: 20px;
 }
 #footer .logo img {
     max-height: 40px;
