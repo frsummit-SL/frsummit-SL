@@ -1816,20 +1816,21 @@ only screen and (max-width: 760px),
     /*.....Label Poly Vinyl Chloride (PVC) data............*/
   #pvc	td:nth-of-type(1):before { content: "Poly Vinyl Chloride (PVC)"; }
   #pvc	td:nth-of-type(2):before { content: "Applications"; }
+  #pvc	td:nth-of-type(3):before { content: "Country of Origin"; }
     /*.....Label Ethylene Vinyl Acetate (EVA) data............*/
   #eva	td:nth-of-type(1):before { content: "Ethylene Vinyl Acetate (EVA)"; }
   #eva	td:nth-of-type(2):before { content: "Applications"; }
   #eva	td:nth-of-type(3):before { content: "Country of Origin"; }
     /*.....Label Acrylonitrile Butadiene Styrene (ABS) data............*/
   #abs	td:nth-of-type(1):before { content: "Acrylonitrile Butadiene Styrene (ABS)"; }
-  #abs	td:nth-of-type(2):before { content: "Description"; }
-  #abs	td:nth-of-type(3):before { content: "Country of Origin"; }
+  /*#abs	td:nth-of-type(2):before { content: "Description"; }*/
+  #abs	td:nth-of-type(2):before { content: "Country of Origin"; }
     /*.....Label Styrene Acrylonitrile (SAN) data............*/
   #styrene-acrylonitrile	td:nth-of-type(1):before { content: "Styrene Acrylonitrile (SAN)"; }
-  #styrene-acrylonitrile	td:nth-of-type(2):before { content: "Description"; }
+  #styrene-acrylonitrile	td:nth-of-type(2):before { content: "Country of Origin"; }
     /*.....Label Engineering Plastics data............*/
   #engineering-plastics	td:nth-of-type(1):before { content: "Engineering Plastics"; }
-  #engineering-plastics	td:nth-of-type(2):before { content: "Description"; }
+  #engineering-plastics	td:nth-of-type(2):before { content: "Country of Origin"; }
     /*.....Label PET Resin data............*/
   #pet-resin	td:nth-of-type(1):before { content: "PET Resin"; }
   #pet-resin	td:nth-of-type(2):before { content: "Country of Origin"; }
