@@ -1664,6 +1664,9 @@ section {
 #product .portfolio-wrap {
     background: none !important;
 }*/
+.product-section{
+  padding: 20px 0;
+}
 .buyer-supplier .portfolio-wrap {
     max-height: 285px;
 }
@@ -1737,6 +1740,9 @@ section {
 @media (max-width: 768px) {
   .small-media {
     display: block;
+  }
+#header .logo img {
+    max-height: 40px;
   }
 }
 /*-----------------------*/
