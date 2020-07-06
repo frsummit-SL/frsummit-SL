@@ -1653,7 +1653,7 @@ section {
   color: #fff;
 }
 /*-------------Custom------------------*/
-#product .portfolio-wrap .portfolio-info{
+/*#product .portfolio-wrap .portfolio-info{
   opacity: 1;
   background-color: rgba(42, 42, 42, 0.7);
 }
@@ -1663,7 +1663,7 @@ section {
 }
 #product .portfolio-wrap {
     background: none !important;
-}
+}*/
 .buyer-supplier .portfolio-wrap {
     max-height: 285px;
 }
