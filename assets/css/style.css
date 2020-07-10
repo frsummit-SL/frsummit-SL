@@ -1653,11 +1653,11 @@ section {
   color: #fff;
 }
 /*-------------Custom------------------*/
-/*#product .portfolio-wrap .portfolio-info{
+#product .portfolio-wrap .portfolio-info{
   opacity: 1;
-  background-color: rgba(42, 42, 42, 0.7);
+  /*background-color: rgba(42, 42, 42, 0.7);*/
 }
-#product .portfolio-wrap:hover .portfolio-info {
+/*#product .portfolio-wrap:hover .portfolio-info {
     opacity: 0.5;
     background: none !important;
 }
