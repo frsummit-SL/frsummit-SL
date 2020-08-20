@@ -428,7 +428,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .carousel-inner .carousel-item-next.carousel-item-left,
 #hero .carousel-inner .carousel-item-prev.carousel-item-right {
   opacity: 1;
-  transition: 0.5s;
+  transition: 0.5s; 
 }
 
 #hero .carousel-inner .carousel-item-next,
@@ -920,13 +920,20 @@ section {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  padding: 20px;
+  /* padding: 20px; */
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
   color: #fff;
   font-weight: 600;
+  background-color: rgba(42, 42, 42, 0.5);
+  margin-bottom: 0;
+  padding: 10px 15px;
+  width: 100%;
+}
+.portfolio .portfolio-wrap:hover .portfolio-info h4 {
+  background-color: transparent;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
