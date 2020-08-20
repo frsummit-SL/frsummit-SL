@@ -588,8 +588,8 @@ section {
 }
 
 .about .image {
-  background: url("../img/company-profile.webp") center center no-repeat;
-  background-size: cover;
+  background: url("../img/company-profile.jpg") center center no-repeat;
+  background-size: contain;
   min-height: 400px;
 }
 
@@ -663,9 +663,9 @@ section {
 # Clients
 --------------------------------------------------------------*/
 .clients {
-  padding: 15px 0;
+  padding: 8px 0;
   text-align: center;
-  background-color: #f1f1f1;
+  background-color: #ffa5002b;
 }
 
 /* .clients img {
